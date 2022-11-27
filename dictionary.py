@@ -1,11 +1,5 @@
 def main():
-    min_num = None
-
-    for i in dictionary():
-        if min_num is None or min_num > i:
-            min_num = i
-
-    print(min_num)
+    print(min_value(dictionary()))
 
 
 def dictionary():
@@ -22,6 +16,15 @@ def dictionary():
     return x
 
 
+def min_value(dictionary):
+    min_num = None
+
+    for i in dictionary:
+        if min_num is None or min_num > i:
+            min_num = i
+
+    return min_num
+
+
 if __name__ == '__main__':
     main()
-
